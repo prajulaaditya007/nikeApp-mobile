@@ -11,7 +11,7 @@ const ProductsScreen = () => {
                            style={styles.image}
                     />
                 </View>
-            }
+            } 
             numColumns={2}
         />
     )
