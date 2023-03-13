@@ -29,7 +29,7 @@ const CartListItem = ({cartItem}) => {
                         size={24}
                         color="gray"
                     />
-                    <Text style={styles.itemTotal}>₹32,000</Text>
+                    <Text style={styles.itemTotal}>₹32,000 </Text>
                 </View>
             </View>
         </View>
