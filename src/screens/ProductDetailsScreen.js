@@ -1,6 +1,6 @@
 import {StyleSheet, View, Image, FlatList, useWindowDimensions, Text, ScrollView, Pressable} from "react-native";
 import products from "../data/products";
-import {isHoverEnabled} from "react-native/Libraries/Pressability/HoverState";
+import {Ionicons} from "@expo/vector-icons";
 
 const ProductDetailsScreen = () => {
     const product = products[0];
@@ -44,6 +44,9 @@ const ProductDetailsScreen = () => {
             </Pressable>
 
             {/* Navigation icon */}
+            <Pressable style={styles.icon}>
+                <Ionicons name="close" size={24} color="white"/>
+            </Pressable>
 
 
         </View>
@@ -81,6 +84,14 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: '500',
         fontSize: 16,
+    },
+    icon: {
+        position: "absolute",
+        top: 50,
+        right: 20,
+        backgroundColor: "#000000AA",
+        borderRadius: 50,
+        padding: 5,
     },
 });
 
